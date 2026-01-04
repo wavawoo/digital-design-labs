@@ -1,18 +1,46 @@
 # Digital Design Labs - Arduino & Embedded Systems
 
-A collection of laboratory works on Digital Design and Embedded Systems using Arduino Nano, covering fundamental concepts from digital I/O to analog signal processing and communication protocols.
+Коллекция лабораторных работ по дисциплине **«Проектирование цифровых устройств»**, выполненных на базе Arduino Nano. От базового цифрового ввода-вывода до работы с аналоговыми сигналами и цифровыми интерфейсами.
 
-### Hardware Fundamentals
-- **Digital I/O** - Button inputs, LED outputs
-- **PWM Control** - Brightness dimming
-- **Circuit Design** - Resistor calculations, schematics
+---
 
-### Timing & Control
-- **Blocking delays** - Simple timing with delay()
-- **Non-blocking timing** - Multitasking with millis()
-- **Hardware interrupts** - Precise timing control
+## Изучаемые технологии и концепции
 
-### Signal Processing
-- **Analog inputs** - Potentiometer reading
-- **ADC conversion** - 10-bit resolution
-- **Serial communication** - PC-MCU data exchange
+### 1. **Основы аппаратного обеспечения**
+- Работа с цифровыми и аналоговыми сигналами
+- Расчет и подбор резисторов
+- Построение электрических схем
+- Подключение периферийных устройств
+
+### 2. **Программные подходы к управлению**
+- **Блокирующее управление** — `delay()` для простых задач
+- **Неблокирующее управление** — `millis()` для многозадачности
+- **Аппаратные прерывания** — точное управление временем
+- **Программные фильтры** — антидребезг, обработка сигналов
+
+### 3. **Коммуникационные протоколы**
+- **UART/Serial** — обмен с ПК
+- **I²C** — работа с датчиками и дисплеями
+- **SPI** (косвенно) — сравнение с I²C
+- **1-Wire** (теоретически) — в контрольных вопросах
+
+### 4. **Обработка сигналов**
+- **АЦП (ADC)** — 10-битное преобразование
+- **ШИМ (PWM)** — управление яркостью, скоростью
+- **Цифровая фильтрация** — обработка входных данных
+
+---
+
+## Используемое оборудование
+
+### Основные компоненты:
+- **Микроконтроллер:** Arduino Nano
+- **Индикация:** светодиоды, OLED-дисплей 128×64
+- **Ввод:** кнопки, потенциометр, энкодер
+- **Обратная связь:** активный buzzer
+- **Пассивные элементы:** резисторы 220 Ом, 10 кОм
+
+### Программное обеспечение:
+- **Среда разработки:** Arduino IDE
+- **Эмуляция:** Wokwi, Tinkercad
+- **Библиотеки:** Wire, Adafruit_GFX, Adafruit_SSD1306, TimerOne
